@@ -28,15 +28,15 @@
 
 .main .overlap-group {
   position: absolute;
-  width: 1440px;
-  height: 449px;
+  width: 1200px;
+  height: 463px;
   top: 0;
-  left: 0;
+  left: 120px;
 }
 
 .main .logo {
   position: absolute;
-  width: 1440px;
+  width: var(--responsive-device-width);
   height: 400px;
   top: 0;
   left: 0;
@@ -46,10 +46,9 @@
 
 .main .text-wrapper {
   position: absolute;
-  width: 1440px;
-  height: 50px;
-  top: 399px;
-  left: 0;
+  height: 77px;
+  top: 386px;
+  left: 443px;
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -57,15 +56,13 @@
   text-align: center;
   letter-spacing: 6.40px;
   line-height: normal;
-  white-space: nowrap;
 }
 
 .main .description {
   position: absolute;
-  width: 1440px;
-  height: 32px;
-  top: 450px;
-  left: 0;
+  height: 29px;
+  top: 471px;
+  left: 420px;
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -123,7 +120,7 @@
   position: absolute;
   height: 38px;
   top: 7px;
-  left: 14px;
+  left: 15px;
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
