@@ -104,10 +104,9 @@
 }
 
 .main .google-play-store {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  width: 330px;
+  height: 58px;
   top: 15px;
   left: 15px;
   border-radius: 15px;
@@ -116,8 +115,10 @@
 }
 
 .main .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
+  position: absolute;
+  height: 38px;
+  top: 7px;
+  left: 14px;
   font-family: "NF Pixels-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
