@@ -8,114 +8,114 @@
 
 .main .div {
   background-color: #212126;
+  width: 1440px;
   height: 1440px;
   position: relative;
-  width: 1440px;
 }
 
 .main .overlap-group {
-  height: 449px;
-  left: 0;
   position: absolute;
-  top: 0;
   width: 1440px;
+  height: 449px;
+  top: 0;
+  left: 0;
 }
 
 .main .logo {
+  position: absolute;
+  width: 1440px;
+  height: 400px;
+  top: 0;
+  left: 0;
   background-color: #404550;
   border-radius: 30px;
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1440px;
 }
 
 .main .text-wrapper {
-  color: #ffffff;
-  font-family: "NF Pixels-Regular", Helvetica;
-  font-size: 64px;
-  font-weight: 400;
+  position: absolute;
+  width: 1440px;
   height: 50px;
+  top: 399px;
   left: 0;
+  font-family: "NF Pixels-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
   letter-spacing: 6.40px;
   line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 399px;
   white-space: nowrap;
-  width: 1440px;
 }
 
 .main .description {
-  color: #ffffff;
-  font-family: "NF Pixels-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
+  position: absolute;
+  width: 1440px;
   height: 32px;
+  top: 450px;
   left: 0;
+  font-family: "NF Pixels-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
   letter-spacing: 2.40px;
   line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 450px;
-  width: 1440px;
 }
 
 .main .game-container-main {
-  height: 360px;
-  left: 140px;
   position: absolute;
-  top: 644px;
   width: 1160px;
+  height: 360px;
+  top: 644px;
+  left: 140px;
 }
 
 .main .smashbit {
-  height: 360px;
-  left: 400px;
   position: relative;
   width: 360px;
+  height: 360px;
+  left: 400px;
 }
 
 .main .banner {
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  top: 0;
+  left: 0;
   background-color: #d9d9d9;
   border-radius: 30px;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 360px;
 }
 
 .main .buttons {
-  height: 160px;
-  left: 0;
   position: absolute;
-  top: 200px;
   width: 360px;
+  height: 160px;
+  top: 200px;
+  left: 0;
 }
 
 .main .google-play-store {
-  align-items: center;
-  border: 3px solid;
-  border-color: #ffffff;
-  border-radius: 15px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  left: 15px;
   position: relative;
   top: 15px;
+  left: 15px;
+  border-radius: 15px;
+  border: 3px solid;
+  border-color: #ffffff;
 }
 
 .main .text-wrapper-2 {
-  color: #ffffff;
+  position: relative;
+  width: fit-content;
   font-family: "NF Pixels-Regular", Helvetica;
-  font-size: 32px;
   font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
   letter-spacing: 3.20px;
   line-height: normal;
-  position: relative;
-  text-align: center;
   white-space: nowrap;
-  width: fit-content;
 }
