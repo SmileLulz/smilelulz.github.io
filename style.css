@@ -21,14 +21,14 @@
 
 .main .div {
   background-color: #212126;
-  width: 100%;
+  width: auto;
   height: 1440px;
   position: static;
 }
 
 .main .overlap-group {
   position: absolute;
-  width: 100%;
+  width: auto;
   height: 463px;
   top: 0;
   left: 120px;
