@@ -11,147 +11,122 @@
   font-display: swap;
 }
 
-:root {
-  --font-family-nf-pixels: 'NF Pixels', sans-serif;
-  --text-white: rgba(255, 255, 255, 1);
-}
-
-.text-white {
-  color: var(--text-white);
-}
-
-
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.main {
+  background-color: #212126;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
+.main .div {
+  background-color: #212126;
+  width: 100vw;
   height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.logo-2 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(64, 69, 81, 1);
-  border-radius: 30px;
+.main .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 463px;
+  top: 0;
+  left: 0;
 }
 
-.text-3 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-nf-pixels);
-  font-weight: normal;
-  font-size: 64px;
-  letter-spacing: 10%;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-white);
-}
-
-.text-4 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-nf-pixels);
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 10%;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-white);
-}
-
-.banner-7 {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(217, 217, 217, 1);
-  border-radius: 30px;
-}
-
-.text-10 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-nf-pixels);
-  font-weight: normal;
-  font-size: 32px;
-  letter-spacing: 10%;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-white);
-}
-
-.google-play-store-9 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 91.66666666666666%;
-  border: 3px solid rgba(255, 255, 255, 1);
-  border-radius: 15px;
-}
-
-.buttons-8 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15px;
-  flex-grow: 1;
-  flex-shrink: 1;
+.main .logo {
   width: 100%;
+  height: 28vw;
+  background-color: #404550;
+  border-radius: 2vw;
 }
 
-.smashbit-6 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 31.03448275862069%;
+
+.main .text-wrapper {
+  position: absolute;
+  height: 77px;
+  top: 386px;
+  left: 563px;
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 6.40px;
+  line-height: normal;
 }
 
-.gamecontainermain-5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 80.55555555555556%;
+.main .description {
+  position: absolute;
+  height: 29px;
+  top: 471px;
+  left: 420px;
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2.40px;
+  line-height: normal;
 }
 
-.main-1 {
-@media (max-width: 1440px) {
-  .main-1 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+.main .game-container-main {
+  position: absolute;
+  width: 1160px;
+  height: 360px;
+  top: 644px;
+  left: 140px;
 }
 
-@media (max-width: 768px) {
-  .main-1 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+.main .smashbit {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  left: 400px;
 }
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: NaN%;
-  background-color: rgba(33, 34, 38, 1);
+
+.main .banner {
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+}
+
+.main .buttons {
+  position: absolute;
+  width: 360px;
+  height: 160px;
+  top: 200px;
+  left: 0;
+}
+
+.main .google-play-store {
+  position: relative;
+  width: 330px;
+  height: 58px;
+  top: 15px;
+  left: 15px;
+  border-radius: 15px;
+  border: 3px solid;
+  border-color: #ffffff;
+}
+
+.main .text-wrapper-2 {
+  position: absolute;
+  height: 38px;
+  top: 7px;
+  left: 15px;
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 3.20px;
+  line-height: normal;
+  white-space: nowrap;
 }
