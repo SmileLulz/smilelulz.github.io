@@ -28,7 +28,7 @@
 
 .main .overlap-group {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 463px;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@
 
 .main .logo {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 400px;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@
   height: 77px;
   top: 386px;
   left: 563px;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 64px;
@@ -63,7 +63,7 @@
   height: 29px;
   top: 471px;
   left: 420px;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -121,7 +121,7 @@
   height: 38px;
   top: 7px;
   left: 15px;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 32px;
