@@ -28,16 +28,16 @@
 
 .main .overlap-group {
   position: absolute;
-  width: 1440px;
+  width: 1200px;
   height: 463px;
   top: 0;
-  left: 0;
+  left: 120px;
 }
 
 .main .logo {
   position: absolute;
-  width: 950;
-  height: 387px;
+  width: var(--responsive-device-width);
+  height: 400px;
   top: 0;
   left: 0;
   background-color: #404550;
@@ -48,7 +48,7 @@
   position: absolute;
   height: 77px;
   top: 386px;
-  left: 563px;
+  left: 443px;
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
