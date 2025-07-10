@@ -36,7 +36,7 @@
 
 .main .logo {
   position: absolute;
-  width: var(--responsive-device-width);
+  width: 100vw;
   height: 400px;
   top: 0;
   left: 0;
