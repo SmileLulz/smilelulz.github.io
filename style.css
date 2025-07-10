@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "NF Pixels-Regular";
+  src: url("./fonts/NFPixels-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .main {
   background-color: #212126;
   display: flex;
