@@ -35,7 +35,7 @@
 }
 
 .main .logo {
-  position: absolute;
+  position: fixed;
   width: 1440;
   height: 387px;
   top: 0;
