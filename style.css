@@ -23,12 +23,12 @@
   background-color: #212126;
   width: 1400;
   height: 1440px;
-  position: static;
+  position: relative;
 }
 
 .main .overlap-group {
   position: absolute;
-  width: 1440;
+  width: 1200;
   height: 463px;
   top: 0;
   left: 120px;
