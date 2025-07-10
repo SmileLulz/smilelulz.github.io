@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "NF Pixels-Regular";
-  src: url('fonts/NFPixels-Regular.ttf') format("ttf");
+    font-family: 'NF Pixels';
+    src: url('fonts/NFPixels-Regular.eot');
+    src: url('fonts/NFPixels-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NFPixels-Regular.woff2') format('woff2'),
+        url('fonts/NFPixels-Regular.woff') format('woff'),
+        url('fonts/NFPixels-Regular.ttf') format('truetype'),
+        url('fonts/NFPixels-Regular.svg#NFPixels-Regular') format('svg');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -45,7 +50,7 @@
   height: 50px;
   top: 399px;
   left: 0;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 64px;
@@ -61,7 +66,7 @@
   height: 32px;
   top: 450px;
   left: 0;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -119,7 +124,7 @@
   height: 38px;
   top: 7px;
   left: 14px;
-  font-family: "NF Pixels-Regular", Helvetica;
+  font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 32px;
