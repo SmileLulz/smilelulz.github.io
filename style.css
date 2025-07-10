@@ -28,7 +28,7 @@
 
 .main .overlap-group {
   position: absolute;
-  width: 1200px;
+  width: auto;
   height: 463px;
   top: 0;
   left: 120px;
@@ -36,7 +36,7 @@
 
 .main .logo {
   position: absolute;
-  width: var(--responsive-device-width);
+  width: auto;
   height: 400px;
   top: 0;
   left: 0;
