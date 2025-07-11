@@ -99,26 +99,42 @@ html, body {
 }
 
 .main .banner {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
   width: 100%;
-  height: 0;
-  padding-bottom: 55.56%; /* 200/360 aspect ratio */
-  position: relative;
-  background-color: #d9d9d9;
+  height: auto;
+  aspect-ratio: 360/200; /* Same as your original padding-bottom calculation (360/200 = 1.8) */
+  object-fit: cover; /* Ensures image fills container while maintaining aspect ratio */
   border-radius: 30px;
+  display: block;
+  background-color: #272727;
+}
+
+.main .game-title {
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 6.4px;
+  margin-top: 0px;
 }
 
 .main .smashbit-buttons {
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .main .download-smashbit-gps-button {
   width: calc(100% - 30px);
   max-width: 330px;
   height: 58px;
-  margin: 15px auto;
+  margin: 4px auto;
   border-radius: 15px;
   border: 3px solid #ffffff;
   position: relative;
@@ -137,4 +153,50 @@ html, body {
   color: #ffffff;
   font-size: 28px; /* For responsive font size: (clamp(16px, 3vw, 32px))*/
   letter-spacing: 0.1em;
+}
+
+/* Footer Styles */
+.main .footer-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 80px auto 40px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.main .copyright {
+  font-family: "NF Pixels", Helvetica;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  text-align: center;
+  width: 100%;
+}
+
+.main .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+
+.main .footer-links a {
+  color: #ffffff;
+  font-family: "NF Pixels", Helvetica;
+  font-size: 18px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.main .footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
