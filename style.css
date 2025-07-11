@@ -39,13 +39,60 @@ html, body {
   align-items: center;
 }
 
+/* Top Navigation Bar */
+.main .top-bar {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #494f5c;
+  margin-bottom: 30px;
+}
+
+.main .nav-buttons {
+  display: flex;
+  gap: 80px;
+}
+
+.main .nav-button {
+  font-family: "NF Pixels", Helvetica;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  padding: 8px 0;
+  position: relative;
+}
+
+.main .nav-button:hover {
+  opacity: 1;
+}
+
+.main .nav-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s;
+}
+
+.main .nav-button:hover::after {
+  width: 100%;
+}
+
+/* Logo, Title, Description */
 .main .overlap-group {
   position: relative;
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers children horizontally */
+  align-items: center;
 }
 
 .main .logo {
@@ -57,14 +104,16 @@ html, body {
   width: 100%;
   max-width: 387px;
   height: auto;
-  aspect-ratio: 387/387; /* Maintains original proportions */
+  aspect-ratio: auto; /* Maintains original proportions */
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .main .title {
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
   letter-spacing: 6.4px;
   margin-top: 0px;
@@ -80,13 +129,38 @@ html, body {
   margin-top: 0px;
 }
 
+/* Featured Games Text Line */
+.divider-with-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 150px 0;
+}
+
+.divider-with-text span {
+  padding: 0 15px;
+  font-family: "NF Pixels", Helvetica;
+  color: #ffffff;
+  font-size: 32px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.divider-with-text::before,
+.divider-with-text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #494f5c;
+}
+
+/* Games Container */
 .main .game-container-main {
   width: 100%;
   max-width: 1160px;
   height: 360px;
   display: flex;
   justify-content: center;
-  margin: 100px 0;
   position: relative;
 }
 
