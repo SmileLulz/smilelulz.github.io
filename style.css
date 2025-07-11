@@ -48,13 +48,18 @@ html, body {
 }
 
 .main .logo {
+  pointer-events: none;  /* Disables click/touch events */
+  user-select: none;     /* Prevents text selection */
+  -webkit-user-drag: none; /* Safari specific drag prevention */
+  -moz-user-select: none; /* Firefox */
+  -webkit-touch-callout: none;
   width: 100%;
   max-width: 387px;
   height: auto;
   aspect-ratio: 387/387; /* Maintains original proportions */
 }
 
-.main .text-wrapper {
+.main .title {
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
