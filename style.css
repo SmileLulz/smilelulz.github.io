@@ -49,11 +49,9 @@ html, body {
 
 .main .logo {
   width: 100%;
-  max-width: 950px;
+  max-width: 387px;
   height: auto;
-  aspect-ratio: 950/387; /* Maintains original proportions */
-  background-color: #404550;
-  border-radius: 30px;
+  aspect-ratio: 387/387; /* Maintains original proportions */
 }
 
 .main .text-wrapper {
