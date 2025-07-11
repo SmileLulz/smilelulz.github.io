@@ -51,19 +51,40 @@
   border-radius: 30px;
 }
 
-.main .text-wrapper,
-.main .description {
-  width: 100%;
+.main .text-wrapper {
+  position: absolute;
+  top: 500px; /* Center vertically relative to parent */
+  left: 50%; /* Center horizontally relative to parent */
+  transform: translate(-50%, -50%); /* True centering */
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: clamp(40px, 5vw, 64px); /* Responsive font scaling */
   text-align: center;
-  position: relative;
-  left: auto;
-  margin-top: 20px;
+  letter-spacing: 0.1em; /* Better than fixed px (6.4/64 = 0.1em) */
+  white-space: nowrap; /* Prevents text wrapping */
+  margin-top: -100px; /* Adjust vertical position */
+}
+
+.main .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "NF Pixels", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: clamp(18px, 2vw, 24px); /* Responsive font */
+  text-align: center;
+  letter-spacing: 0.1em; /* 2.4/24 = 0.1em */
+  margin-top: 30px; /* Space between title and description */
+  white-space: nowrap;
 }
 
 .main .game-container-main {
   width: 100%;
   max-width: 1160px;
-  height: auto;
+  height: 360px;
   display: flex;
   justify-content: center;
   margin-top: 40px;
