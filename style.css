@@ -21,22 +21,23 @@
 
 .main .div {
   background-color: #212126;
-  width: 1400;
+  width: 1400px;
   height: 1440px;
   position: relative;
 }
 
 .main .overlap-group {
   position: absolute;
-  width: 1200;
+  width: 1200px;
   height: 463px;
   top: 0;
-  left: 120px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main .logo {
-  position: fixed;
-  width: 950;
+  position: absolute;
+  width: 950px;
   height: 387px;
   top: 0;
   left: 0;
