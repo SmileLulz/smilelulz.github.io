@@ -21,14 +21,14 @@
 
 .main .div {
   background-color: #212126;
-  width: 1400;
+  width: 1400px;
   height: 1440px;
-  position: relative;
+  position: static;
 }
 
 .main .overlap-group {
   position: absolute;
-  width: 1440;
+  width: 1440px;
   height: 463px;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@
 
 .main .logo {
   position: fixed;
-  width: 950;
+  width: 950px;
   height: 387px;
   top: 0;
   left: 0;
