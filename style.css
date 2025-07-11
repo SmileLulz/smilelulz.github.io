@@ -31,8 +31,7 @@
   width: 1200px;
   height: 463px;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
 }
 
 .main .logo {
