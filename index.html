@@ -28,6 +28,15 @@
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="style.css">
 </head>
+<script data-name="BMC-Widget" 
+  data-cfasync="false" 
+  src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+  data-id="smilelulz" 
+  data-description="Support me on Buy me a coffee!" 
+  data-message="Thank you for supporting me on my journey!" 
+  data-color="#5F7FFF" data-position="Right" data-x_margin="25" data-y_margin="25"
+  defer>
+</script>
 <body>
   <!-- Main Container -->
   <div class="main">
@@ -36,9 +45,12 @@
       <!-- Top Navigation Bar -->
       <div class="top-bar">
         <div class="nav-buttons">
-          <a href="#" class="nav-button">Home</a>
           <a href="#games" class="nav-button">Games</a>
-          <a href="#about" class="nav-button">About</a>
+          <div class="nav-divider"></div>
+          <a href="https://discord.gg/VmE8cEzXR5" target="_blank" class="nav-button">Discord</a>
+          <a href="https://play.google.com/store/apps/developer?id=SmileLulz" target="_blank" class="nav-button">Google Play</a>
+          <div class="nav-divider"></div>
+          <a href="/about" class="nav-button">About</a>
         </div>
       </div>
 
@@ -50,12 +62,12 @@
       </div>
 
       <!-- Featured Games -->
-      <div class="divider-with-text">
+      <div id="games" class="divider-with-text">
         <span>Games</span>
       </div>
 
       <!-- Game Showcase -->
-      <div class="game-container-main">
+      <div class="game-container">
         <div class="smashbit">
           <a href="/smashbit"
             rel="noopener noreferrer"
@@ -78,5 +90,19 @@
       
     </div>
   </div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#games') {
+          document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
