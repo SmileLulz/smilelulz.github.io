@@ -12,7 +12,7 @@
 }
 
 html, body {
-  background-color: #212126; /* Match your main background */
+  background-color: #212126; /* Match main background */
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -25,18 +25,17 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 20px;
-  /* Remove min-height: 100vh - let content determine height */
 }
 
 .main .div {
-  background-color: transparent; /* No longer needed */
+  background-color: transparent;
   width: 100%;
   max-width: 1400px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 200px; /* Ensures space for absolutely positioned elements */
+  padding-bottom: 200px; /* Space for absolute positioning elements */
 }
 
 .main .overlap-group {
@@ -64,7 +63,7 @@ html, body {
   font-size: 64px;
   text-align: center;
   letter-spacing: 6.4px;
-  margin-top: 30px; /* Space between logo and title */
+  margin-top: 0px;
 }
 
 .main .description {
@@ -74,7 +73,7 @@ html, body {
   font-size: 24px;
   text-align: center;
   letter-spacing: 2.4px;
-  margin-top: 15px; /* Space between title and description */
+  margin-top: 0px;
 }
 
 .main .game-container-main {
@@ -83,7 +82,7 @@ html, body {
   height: 360px;
   display: flex;
   justify-content: center;
-  margin: 40px 0; /* Replaced top:150px with normal margin */
+  margin: 100px 0;
   position: relative;
 }
 
@@ -133,6 +132,6 @@ html, body {
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: clamp(16px, 3vw, 32px); /* Responsive font size */
+  font-size: 28px; /* For responsive font size: (clamp(16px, 3vw, 32px))*/
   letter-spacing: 0.1em;
 }
