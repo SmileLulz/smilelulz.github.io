@@ -11,74 +11,70 @@
   font-display: swap;
 }
 
+html, body {
+  background-color: #212126; /* Match your main background */
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
 .main {
   background-color: #212126;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This centers everything horizontally */
-  min-height: 100vh; /* Makes sure the container takes at least the full viewport height */
+  align-items: center;
   width: 100%;
-  padding: 20px; /* Adds some spacing around the edges */
+  padding: 20px;
+  /* Remove min-height: 100vh - let content determine height */
 }
 
 .main .div {
-  background-color: #212126;
+  background-color: transparent; /* No longer needed */
   width: 100%;
-  max-width: 1400px; /* Maximum width, but will shrink on smaller screens */
+  max-width: 1400px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 200px; /* Ensures space for absolutely positioned elements */
 }
 
 .main .overlap-group {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: auto;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centers children horizontally */
 }
 
 .main .logo {
   width: 100%;
   max-width: 950px;
   height: auto;
-  aspect-ratio: 950/387; /* Maintain aspect ratio */
+  aspect-ratio: 950/387; /* Maintains original proportions */
   background-color: #404550;
   border-radius: 30px;
 }
 
 .main .text-wrapper {
-  position: absolute;
-  top: 500px; /* Center vertically relative to parent */
-  left: 50%; /* Center horizontally relative to parent */
-  transform: translate(-50%, -50%); /* True centering */
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: clamp(40px, 5vw, 64px); /* Responsive font scaling */
+  font-size: 64px;
   text-align: center;
-  letter-spacing: 0.1em; /* Better than fixed px (6.4/64 = 0.1em) */
-  white-space: nowrap; /* Prevents text wrapping */
-  margin-top: -100px; /* Adjust vertical position */
+  letter-spacing: 6.4px;
+  margin-top: 30px; /* Space between logo and title */
 }
 
 .main .description {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: clamp(18px, 2vw, 24px); /* Responsive font */
+  font-size: 24px;
   text-align: center;
-  letter-spacing: 0.1em; /* 2.4/24 = 0.1em */
-  margin-top: 30px; /* Space between title and description */
-  white-space: nowrap;
+  letter-spacing: 2.4px;
+  margin-top: 15px; /* Space between title and description */
 }
 
 .main .game-container-main {
@@ -87,9 +83,8 @@
   height: 360px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0; /* Replaced top:150px with normal margin */
   position: relative;
-  left: auto;
 }
 
 .main .smashbit {
