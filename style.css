@@ -160,7 +160,6 @@ html, body {
 .main .game-container-main {
   width: 100%;
   max-width: 1160px;
-  height: 360px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -170,66 +169,38 @@ html, body {
   width: 100%;
   max-width: 360px;
   height: auto;
-  position: relative;
   left: auto;
   margin: 0 auto;
 }
 
-.main .banner {
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  -moz-user-select: none;
-  -webkit-touch-callout: none;
+/* Banner Link */
+.main .banner-link {
+  display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 360/200; /* Same as your original padding-bottom calculation (360/200 = 1.8) */
-  object-fit: cover; /* Ensures image fills container while maintaining aspect ratio */
+  aspect-ratio: 360/200;
   border-radius: 30px;
-  display: block;
-  background-color: #272727;
+  overflow: hidden;
 }
 
-.main .game-title {
+.main .smashbit-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.main .banner-link:hover .smashbit-banner {
+  transform: scale(1.1);
+}
+
+.main .smashbit-title {
   font-family: "NF Pixels", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 45px;
   text-align: center;
   letter-spacing: 6.4px;
-  margin-top: 0px;
-}
-
-.main .smashbit-buttons {
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: 0px;
-}
-
-.main .download-smashbit-gps-button {
-  width: calc(100% - 30px);
-  max-width: 330px;
-  height: 58px;
-  margin: 4px auto;
-  border-radius: 15px;
-  border: 3px solid #ffffff;
-  position: relative;
-  left: auto;
-}
-
-.main .download-smashbit-gps-text {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "NF Pixels", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 28px; /* For responsive font size: (clamp(16px, 3vw, 32px))*/
-  letter-spacing: 0.1em;
 }
 
 /* Footer */

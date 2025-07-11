@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmileLulz - Download Links</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific styles */
+    body {
+      background-color: #212126;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "NF Pixels", Helvetica;
+    }
+    
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+    
+    /* Button container with image background */
+    .download-button {
+      width: 100%;
+      max-width: 360px;
+      height: 200px; /* Matching banner aspect ratio */
+      margin: 0 auto;
+      border-radius: 30px;
+      border: 3px solid #ffffff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .download-button:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Different images for each button */
+    .google-play {
+      background-image: url('images/google-play.png');
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons-container">
+
+    <!-- Google Play Button -->
+    <a href="https://play.google.com/store/apps/details?id=com.smilelulz.smashbit" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="download-button google-play">
+    </a>
+    
+  </div>
+</body>
+</html>
