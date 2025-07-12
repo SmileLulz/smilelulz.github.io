@@ -149,6 +149,31 @@ html, body {
   margin-top: 0px;
 }
 
+/* Download Links Text Line */
+.divider-download-links-with-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 25px;
+}
+
+.divider-download-links-with-text span {
+  padding: 0 15px;
+  font-family: "NF Pixels", Helvetica;
+  color: #ffffff;
+  font-size: 32px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.divider-download-links-with-text::before,
+.divider-download-links-with-text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #494f5c;
+}
+
 /* Featured Games Text Line */
 .divider-with-text {
   display: flex;
