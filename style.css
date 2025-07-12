@@ -15,6 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.BMC-Widget {
+  right: 0 !important;
+  margin-right: 0 !important;
+  transform: translateX(0) !important;
+}
+
 html, body {
   background-color: #212126; /* Match main background */
   margin: 0;
@@ -260,4 +266,11 @@ html, body {
 .main .footer-links a:hover {
   opacity: 1;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .BMC-Widget {
+    bottom: 60px !important;
+    transform: scale(0.9) !important;
+  }
 }
