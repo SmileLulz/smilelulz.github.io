@@ -70,7 +70,7 @@ html, body {
 
 .main .nav-buttons {
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 .main .nav-button {
