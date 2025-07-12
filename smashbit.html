@@ -6,93 +6,133 @@
   <title>SmileLulz - Download Links</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Page-specific styles */
-    body {
-      background-color: #212126;
+    /* Tight layout with no extra space */
+    body, html {
       margin: 0;
       padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      background-color: #212126;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       font-family: "NF Pixels", Helvetica;
     }
     
+    .main {
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .div {
+      flex: 1;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Download section styling */
     .buttons-container {
+      width: 100%;
+      max-width: 360px;
+      margin: 20px auto;
       display: flex;
       flex-direction: column;
       gap: 30px;
-      width: 100%;
-      max-width: 400px;
-      padding: 20px;
+      flex: 1;
+      justify-content: center;
     }
     
-    /* Button container with image background */
     .download-button {
       width: 100%;
-      max-width: 360px;
-      height: 200px; /* Matching banner aspect ratio */
-      margin: 0 auto;
+      height: 200px;
       border-radius: 30px;
       border: 3px solid #ffffff;
-      position: relative;
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-decoration: none;
+      align-items: center;
       overflow: hidden;
-      background-size: cover;
-      background-position: center;
       transition: transform 0.3s ease;
+      position: relative;
     }
     
     .download-button:hover {
       transform: scale(1.05);
     }
     
-    /* Different images for each button */
-    .google-play {
-      background-image: url('images/google-play.png');
+    .download-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* Inherited elements */
+    .top-bar, .footer-container {
+      max-width: 1160px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    
+    .divider-download-links-with-text {
+      width: 100%;
+      max-width: 1160px;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+    }
+    
+    .divider-download-links-with-text::before,
+    .divider-download-links-with-text::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #494f5c;
+      margin: 0 20px;
     }
   </style>
 </head>
 <body>
-  <!-- Main Container -->
   <div class="main">
     <div class="div">
-      
-      <!-- Top Navigation Bar -->
+      <!-- Navigation -->
       <div class="top-bar">
         <div class="nav-buttons">
           <a href="/SmileLulz" class="nav-button">Home</a>
+          <div class="nav-divider"></div>
+          <a href="SmileLulz/smashbit" class="nav-button">Smashbit</a>
         </div>
       </div>
 
-      <!-- Games Divider Section -->
       <div class="divider-download-links-with-text">
         <span>Download Links</span>
       </div>
 
-      <!-- Buttons Container -->
       <div class="buttons-container">
-        <!-- Google Play Button -->
+        <!-- Google Play Button with Image -->
         <a href="https://play.google.com/store/apps/details?id=com.smilelulz.smashbit" 
            target="_blank" 
            rel="noopener noreferrer"
-           class="download-button google-play">
+           class="download-button">
+          <img src="images/google-play.png" alt="Get it on Google Play">
         </a>
       </div>
       
-      <!-- Footer Section (same as main page) -->
+      <!-- Footer -->
       <div class="footer-container">
         <div class="copyright">© 2025 SmileLulz. All rights reserved.</div>
         <div class="footer-links">
-          <a href="/SmileLulz/smashbit-privacy-policy">Smashbit's Privacy Policy</a>
-          <a href="/SmileLulz/smashbit-terms-conditions">Smashbit's Terms & Conditions</a>
+          <a href="SmileLulz/smashbit-privacy-policy">Smashbit's Privacy Policy</a>
+          <a href="SmileLulz/smashbit-terms-conditions">Smashbit's Terms & Conditions</a>
         </div>
       </div>
-      
     </div>
   </div>
 </body>

@@ -35,7 +35,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  justify-content: center;
 }
 
 .main .div {
@@ -47,6 +47,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 /* Top Navigation Bar */
@@ -154,7 +155,7 @@ html, body {
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 15px 0 25px;
+  margin: 20px 0;
 }
 
 .divider-download-links-with-text span {
