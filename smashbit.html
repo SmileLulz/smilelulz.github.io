@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmileLulz - Download Links</title>
+  <title>SmileLulz - Smashbit</title>
 
-  <!-- Favicon and PWA Meta Tags -->
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -23,163 +22,107 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  
   <!-- Primary Meta Tags -->
   <meta name="title" content="SmileLulz - Download Links">
   <meta name="description" content="Smashbit download links.">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://smilelulz.github.io/SmileLulz/smashbit">
   <meta property="og:title" content="SmileLulz - Download Links">
   <meta property="og:description" content="Smashbit download links.">
   <meta property="og:image" content="https://smilelulz.github.io/SmileLulz/ms-icon-310x310.png">
-
   <!-- Twitter -->
   <meta property="twitter:card" content="summary">
   <meta property="twitter:url" content="https://smilelulz.github.io/SmileLulz/smashbit">
   <meta property="twitter:title" content="SmileLulz - Download Links">
   <meta property="twitter:description" content="Smashbit download links.">
   <meta property="twitter:image" content="https://smilelulz.github.io/SmileLulz/ms-icon-310x310.png">
-
-  <!-- WhatsApp Specific -->
+  <!-- WhatsApp -->
   <meta property="og:image:width" content="310">
   <meta property="og:image:height" content="310">
   <meta property="og:image:alt" content="SmileLulz Logo">
 
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Tight layout with no extra space */
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      overflow-x: hidden;
-      background-color: #212126;
-      min-height: 100vh;
-      font-family: "NF Pixels", Helvetica;
-    }
-    
-    .main {
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    
-    .div {
-      flex: 1;
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    /* Download section styling */
-    .buttons-container {
-      width: 100%;
-      max-width: 360px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      flex: 1;
-      justify-content: center;
-      align-items: center; /* Add this to center horizontally */
-    }
-    
-    .download-button {
-      width: 100%;
-      height: 200px;
-      border-radius: 30px;
-      border: 3px solid #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      position: relative;
-    }
-    
-    .download-button:hover {
-      transform: scale(1.05);
-    }
-    
-    .download-button img {
-      width: 100%;
+    html, body {
       height: 100%;
-      object-fit: cover;
-    }
-    
-    /* Inherited elements */
-    .top-bar, .footer-container {
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
-    
-    .divider-download-links-with-text {
-      width: 100%;
-      max-width: 1160px;
-      margin: 20px auto;
       display: flex;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
-      font-size: 24px;
+      flex-direction: column;
     }
-    
-    .divider-download-links-with-text::before,
-    .divider-download-links-with-text::after {
-      content: "";
+
+    body {
       flex: 1;
-      border-bottom: 1px solid #494f5c;
-      margin: 0 20px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .info h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 1.5rem;
+      color: #b9c0ca;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #ccc;
     }
   </style>
 </head>
+
 <body>
-  <div class="main">
-    <div class="div">
-      <!-- Navigation -->
-      <div class="top-bar">
-        <div class="nav-buttons">
-          <a href="/SmileLulz" class="nav-button">Home</a>
-          <div class="nav-divider"></div>
-          <a href="smashbit" class="nav-button">Smashbit</a>
-        </div>
-      </div>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="SmileLulz">Home</a></li>
+        <li><a href="https://discord.gg/VmE8cEzXR5" target="_blank">Discord</a></li>
+        <li><a href="SmileLulz/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="nav-divider"></div>
 
-      <div class="divider-download-links-with-text">
-        <span>Download Links</span>
-      </div>
+  <div class="info">
+    <h1>Smashbit</h1>
+    <p>Smashbit game blends arcade, defense and clicker genre to provide you an unique type of simple gameplay with satisfying music and sound effects; upgrade your power as you progress through.</p>
+  </div>
 
-      <div class="buttons-container">
-        <!-- Google Play Button with Image -->
-        <a href="https://play.google.com/store/apps/details?id=com.smilelulz.smashbit" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="download-button">
-          <img src="images/google-play.png" alt="Get it on Google Play">
+  <section id="links">
+    <div class="links-container">
+      
+      <div class="link-card">
+        <a href="https://play.google.com/store/apps/details?id=com.smilelulz.smashbit" class="link-banner">
+          <img src="images/google-play.png" alt="Google Play Banner">
         </a>
       </div>
-      
-      <!-- Footer -->
-      <div class="footer-container">
-        <div class="copyright">© 2025 SmileLulz. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="smashbit-privacy-policy">Smashbit's Privacy Policy</a>
-          <a href="smashbit-terms-conditions">Smashbit's Terms & Conditions</a>
-        </div>
-      </div>
+
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>© SmileLulz 2025</p>
+    <p>
+      <a href="https://discord.gg/VmE8cEzXR5" target="_blank">Discord</a> |
+      <a href="SmileLulz/smashbit-privacy-policy.html">Smashbit's Privacy Policy</a> |
+      <a href="SmileLulz/smashbit-terms-conditions.html">Smashbit's Terms & Conditions</a> |
+      <a href="mailto:SmileLulzContact@gmail.com">SmileLulzContact@gmail.com</a>
+    </p>
+  </footer>
 </body>
 </html>

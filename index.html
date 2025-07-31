@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmileLulz - Indie Game Developer</title>
-  
-  <!-- Favicon and PWA Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileLulz</title>
+
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -23,34 +22,29 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  
   <!-- Primary Meta Tags -->
   <meta name="title" content="SmileLulz - Indie Game Developer">
   <meta name="description" content="An Indie Game Developer. Making Simple Games.">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://smilelulz.github.io/SmileLulz/">
   <meta property="og:title" content="SmileLulz - Indie Game Developer">
   <meta property="og:description" content="An Indie Game Developer. Making Simple Games.">
   <meta property="og:image" content="https://smilelulz.github.io/SmileLulz/ms-icon-310x310.png">
-
   <!-- Twitter -->
   <meta property="twitter:card" content="summary">
   <meta property="twitter:url" content="https://smilelulz.github.io/SmileLulz/">
   <meta property="twitter:title" content="SmileLulz - Indie Game Developer">
   <meta property="twitter:description" content="An Indie Game Developer. Making Simple Games.">
   <meta property="twitter:image" content="https://smilelulz.github.io/SmileLulz/ms-icon-310x310.png">
-
-  <!-- WhatsApp Specific -->
+  <!-- WhatsApp -->
   <meta property="og:image:width" content="310">
   <meta property="og:image:height" content="310">
   <meta property="og:image:alt" content="SmileLulz Logo">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <script data-name="BMC-Widget" 
   data-cfasync="false" 
   src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
@@ -60,73 +54,49 @@
   data-color="#5F7FFF" data-position="Right" data-x_margin="25" data-y_margin="25"
   defer>
 </script>
+
 <body>
-  <!-- Main Container -->
-  <div class="main">
-    <div class="div">
-      
-      <!-- Top Navigation Bar -->
-      <div class="top-bar">
-        <div class="nav-buttons">
-          <a href="#games" class="nav-button">Games</a>
-          <div class="nav-divider"></div>
-          <a href="https://discord.gg/VmE8cEzXR5" target="_blank" class="nav-button">Discord</a>
-          <div class="nav-divider"></div>
-          <a href="/SmileLulz/about" class="nav-button">About</a>
-        </div>
-      </div>
 
-      <!-- Header Section -->
-      <div class="overlap-group">
-        <img class="logo" draggable="false" src="images/banner.png" alt="SmileLulz Logo">
-        <div class="title">SmileLulz</div>
-        <div class="description">An Indie Game Developer. Making Simple Games.</div>
-      </div>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="https://discord.gg/VmE8cEzXR5" target="_blank">Discord</a></li>
+        <li><a href="SmileLulz/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="nav-divider"></div>
 
-      <!-- Featured Games -->
-      <div id="games" class="divider-with-text">
-        <span>Games</span>
-      </div>
-
-      <!-- Game Showcase -->
-      <div class="game-container">
-
-        <div class="smashbit">
-          <a href="/SmileLulz/smashbit"
-            rel="noopener noreferrer"
-            class="banner-link">
-            <img class="smashbit-banner" draggable="false" src="images/smashbit.jpg" alt="Smashbit Game Banner">
-          </a>
-          <div class="smashbit-title">Smashbit</div>
-        </div>
-        
-      </div>
-      
-      <!-- Footer Section -->
-      <div class="footer-container">
-        <div class="copyright">© 2025 SmileLulz. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="/SmileLulz/privacy-policy">Privacy Policy</a>
-          <a href="/SmileLulz/terms-of-service">Terms of Service</a>
-          <a href="mailto:SmileLulzContact@gmail.com">Contact Email</a>
-        </div>
-      </div>
-      
+  <section id="hero">
+    <div class="hero-content">
+      <img src="images/banner.png" alt="Banner" class="hero-banner">
+      <h1>SmileLulz</h1>
+      <p>An Indie Game Developer. Making Simple Games.</p>
     </div>
-  </div>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#games') {
-          document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-  </script>
+  </section>
+
+  <div class="section-divider"><span>GAMES</span></div>
+
+  <section id="games">
+    <div class="games-container">
+
+      <div class="game-card">
+        <a href="SmileLulz/smashbit" class="game-banner">
+          <img src="images/smashbit.jpg" alt="Smashbit Banner">
+        </a>
+        <h3 class="game-title">Smashbit</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© SmileLulz 2025</p>
+    <p>
+      <a href="https://discord.gg/VmE8cEzXR5" target="_blank">Discord</a> |
+      <a href="mailto:SmileLulzContact@gmail.com">SmileLulzContact@gmail.com</a>
+    </p>
+  </footer>
 </body>
 </html>
