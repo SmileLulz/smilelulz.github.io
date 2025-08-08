@@ -4,7 +4,7 @@ I'm an indie game developer passionate about making simple, fun, and replayable 
 
 🎮 I create:
 - Pixel-art or low-asset games with clean mechanics
-- Single-player experiences — multiplayer may come later!
+- Singleplayer experiences - multiplayer may come later
 
 ---
 
