@@ -13,4 +13,4 @@ I'm an indie game developer passionate about making simple, fun, and replayable 
 This repository hosts my official website.
 It includes download links to my games with a clean responsive layout.
 
-Check it out here: **[SmileLulz](https://smilelulz.github.io/SmileLulz/)**
+Check it out here: **[SmileLulz](https://smilelulz.github.io/)**
