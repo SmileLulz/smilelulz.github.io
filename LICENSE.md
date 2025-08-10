@@ -4,4 +4,4 @@
 - Personal/educational/non-commercial use (no profit).
 
 **Prohibited**: 
-- Redistribution (including forks), modifications, or commercial use.
+- Redistribution of assets, or commercial use.
