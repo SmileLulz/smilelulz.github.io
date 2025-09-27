@@ -194,6 +194,15 @@ header {
   letter-spacing: 3px;
 }
 
+.last-updated {
+  font-size: 0.9rem;
+  color: #aeb2bd; /* subtle color */
+  margin-top: 5px;  /* space above text */
+  margin-bottom: 12px; /* extra space below */
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 
 footer {
   background-color: #1a1b1b;
