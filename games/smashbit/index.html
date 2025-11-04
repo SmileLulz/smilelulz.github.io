@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileLulz • Smashbit</title>
+
+    <script src="/meta-config.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SmileLulz",
+      "alternateName": "SmileLulz",
+      "url": "https://smilelulz.com/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SmileLulz",
+      "url": "https://smilelulz.com/",
+      "logo": "https://smilelulz.com/ms-icon-310x310.png"
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="terminal-controls">
+            <div class="terminal-control close"></div>
+            <div class="terminal-control minimize"></div>
+            <div class="terminal-control maximize"></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/socials">Socials</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="/images/smashbit.jpg" alt="Smashbit" class="hero-banner">
+            <h1>Smashbit</h1>
+            <p>An arcade-defense clicker game with satisfying gameplay</p>
+            
+            <div class="terminal-prompt">
+                <div class="prompt-line">
+                    <span class="prompt-user">user</span>
+                    <span class="prompt-at">@</span>
+                    <span class="prompt-host">smilelulz</span>
+                    <span class="prompt-path">:~/smashbit$</span>
+                    <span class="prompt-command" id="current-command"></span>
+                    <span class="prompt-cursor" id="cursor"></span>
+                </div>
+                <div id="terminal-output"></div>
+                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"><span>about</span></div>
+
+    <section id="game-info">
+        <div class="game-info-container">
+            <div class="info-section">
+                <h2>Game Description</h2>
+                <p>Smashbit blends arcade, defense and clicker genres to provide you an unique type of simple gameplay with satisfying music and sound effects. Upgrade your power as you progress through the game.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"><span>download</span></div>
+
+    <section id="downloads">
+        <div class="downloads-container">
+            <div class="download-card">
+                <a href="https://play.google.com/store/apps/details?id=com.smilelulz.smashbit" target="_blank" class="download-link">
+                    <span class="download-text google-play">Google Play</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© SmileLulz 2025 | All Rights Reserved</p>
+        <p>
+            <a href="/games/smashbit/smashbit-privacy-policy">Privacy Policy</a> |
+            <a href="/games/smashbit/smashbit-terms">Terms of Service</a> |
+            <a href="mailto:SmileLulzContact@gmail.com">SmileLulzContact@gmail.com</a>
+        </p>
+    </footer>
+
+    <button id="donate-btn">❤ Donate</button>
+    <div id="overlay">
+        <div id="popup">
+            <h2>Support The Developer :D</h2>
+
+            <div class="donation-container">
+                <div class="donation-card">
+                    <a href="https://buymeacoffee.com/smilelulz" target="_blank" class="donation-link">
+                        <img src="/images/bmc-button.jpg" alt="Buy Me a Coffee" class="donation-img">
+                    </a>
+                </div>
+
+                <div class="donation-card">
+                    <a href="https://ko-fi.com/smilelulz" target="_blank" class="donation-link">
+                        <img src="/images/kofi-button.jpg" alt="Ko-fi" class="donation-img">
+                    </a>
+                </div>
+            </div>
+
+            <button class="close-btn" id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>

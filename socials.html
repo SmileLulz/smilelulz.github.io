@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileLulz • Socials</title>
+
+    <script src="/meta-config.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "SmileLulz",
+            "alternateName": "SmileLulz",
+            "url": "https://smilelulz.com/"
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "SmileLulz",
+            "url": "https://smilelulz.com/",
+            "logo": "https://smilelulz.com/ms-icon-310x310.png"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="terminal-controls">
+            <div class="terminal-control close"></div>
+            <div class="terminal-control minimize"></div>
+            <div class="terminal-control maximize"></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="images/banner.png" alt="SmileLulz" class="hero-banner">
+            <h1>SmileLulz</h1>
+            <p>Connect with me across platforms</p>
+            
+            <div class="terminal-prompt">
+                <div class="prompt-line">
+                    <span class="prompt-user">user</span>
+                    <span class="prompt-at">@</span>
+                    <span class="prompt-host">smilelulz</span>
+                    <span class="prompt-path">:~/socials$</span>
+                    <span class="prompt-command" id="current-command"></span>
+                    <span class="prompt-cursor" id="cursor"></span>
+                </div>
+                <div id="terminal-output"></div>
+                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"><span>platforms</span></div>
+
+    <section id="socials">
+        <div class="socials-container">
+            <!-- Game Platforms -->
+            <div class="social-card">
+                <a href="https://play.google.com/store/apps/developer?id=SmileLulz" target="_blank" class="social-link">
+                    <span class="social-text google-play">Google Play</span>
+                </a>
+            </div>
+
+            <div class="social-card">
+                <a href="https://itch.io/profile/smilelulz" target="_blank" class="social-link">
+                    <span class="social-text itch-io">itch.io</span>
+                </a>
+            </div>
+
+            <!-- Social Platforms -->
+            <div class="social-card">
+                <a href="https://discord.gg/VmE8cEzXR5" target="_blank" class="social-link">
+                    <span class="social-text discord">Discord</span>
+                </a>
+            </div>
+
+            <div class="social-card">
+                <a href="https://x.com/SmileLulz" target="_blank" class="social-link">
+                    <span class="social-text twitter">Twitter / X</span>
+                </a>
+            </div>
+
+            <div class="social-card">
+                <a href="https://www.instagram.com/smilelulz" target="_blank" class="social-link">
+                    <span class="social-text instagram">Instagram</span>
+                </a>
+            </div>
+
+            <div class="social-card">
+                <a href="https://www.youtube.com/@SmileLulz" target="_blank" class="social-link">
+                    <span class="social-text youtube"><span class="you">You</span><span class="tube">Tube</span></span>
+                </a>
+            </div>
+
+            <!-- Support Platforms -->
+            <div class="social-card">
+                <a href="https://buymeacoffee.com/smilelulz" target="_blank" class="social-link">
+                    <span class="social-text buymeacoffee">Buy Me a Coffee</span>
+                </a>
+            </div>
+
+            <div class="social-card">
+                <a href="https://ko-fi.com/smilelulz" target="_blank" class="social-link">
+                    <span class="social-text kofi">Ko-fi</span>
+                </a>
+            </div>
+
+            <!-- Communication -->
+            <div class="social-card">
+                <a href="mailto:SmileLulzContact@gmail.com" class="social-link">
+                    <span class="social-text email">Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© SmileLulz 2025 | All Rights Reserved</p>
+        <p>
+            <a href="mailto:SmileLulzContact@gmail.com">SmileLulzContact@gmail.com</a>
+        </p>
+    </footer>
+
+    <button id="donate-btn">❤ Donate</button>
+    <div id="overlay">
+        <div id="popup">
+            <h2>Support The Developer :D</h2>
+
+            <div class="donation-container">
+                <div class="donation-card">
+                    <a href="https://buymeacoffee.com/smilelulz" target="_blank" class="donation-link">
+                        <img src="/images/bmc-button.jpg" alt="Buy Me a Coffee" class="donation-img">
+                    </a>
+                </div>
+
+                <div class="donation-card">
+                    <a href="https://ko-fi.com/smilelulz" target="_blank" class="donation-link">
+                        <img src="/images/kofi-button.jpg" alt="Ko-fi" class="donation-img">
+                    </a>
+                </div>
+            </div>
+
+            <button class="close-btn" id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
