@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentInput = '';
 
         const commands = {
-            'help': () => `Available commands: ${window.location.pathname === '/' ? 'about, ' : 'home, '}games, socials, refresh, back, clear, help, donate, email, smashbit, smashbit-policy, smashbit-terms, google-play, itch, discord, twitter, instagram, youtube, buymeacoffee, kofi`,
+            'help': () => `Available commands: ${window.location.pathname === '/' ? 'about, ' : 'home, '}games, socials, refresh, back, clear, help, donate, email, smashbit, smashbit-policy, smashbit-terms, google-play, itch, discord, twitter, instagram, odysee, youtube, buymeacoffee, kofi`,
             'about': () => {
                 if (window.location.pathname !== '/about') {
                     window.location.href = '/about';
@@ -111,6 +111,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'instagram': () => {
                 window.open('https://www.instagram.com/smilelulz', '_blank');
                 return 'Opening Instagram...';
+            },
+            'odysee': () => {
+                window.open('https://odysee.com/@SmileLulz', '_blank');
+                return 'Opening Odysee...';
             },
             'youtube': () => {
                 window.open('https://www.youtube.com/@SmileLulz', '_blank');
