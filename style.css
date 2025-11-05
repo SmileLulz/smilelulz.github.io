@@ -628,6 +628,12 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.odysee { 
+  background: linear-gradient(45deg, #E84A7A, #E86A7A, #E88A7A, #E8AA7A, #E8CA7A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .youtube .you { color: #E35B5B !important; }
 .youtube .tube { color: var(--text-primary) !important; }
 .buymeacoffee { color: #E8C95B !important; }
