@@ -11,7 +11,7 @@ const gamesData = [
         description: "A quick, colorful and satisfying clicker game where you pop the SHAPES before time runs out. Yeah, that's it.",
         image: "images/shape-buster.jpg",
         link: "/games/shape-buster/",
-        lastUpdated: "Coming 5 Feb"
+        lastUpdated: "Last Updated: 5 Feb 2026"
     }
 ];
 
