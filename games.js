@@ -7,11 +7,11 @@ const gamesData = [
         lastUpdated: "Last Updated: 17 Sep 2025"
     },
     {
-        title: "New Game", 
-        description: "A new game is in development :D",
-        image: null,
-        link: "#",
-        lastUpdated: "Coming 2026 Q1"
+        title: "SHAPE-buster", 
+        description: "A quick, colorful and satisfying clicker game where you pop the SHAPES before time runs out. Yeah, that's it.",
+        image: "images/shape-buster.jpg",
+        link: "/games/shape-buster/",
+        lastUpdated: "Coming 5 Feb"
     }
 ];
 

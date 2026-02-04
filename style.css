@@ -672,6 +672,11 @@ footer a:hover {
   max-width: 700px;
 }
 
+#downloads p {
+  text-align: center;
+  color: var(--text-secondary) !important
+}
+
 .downloads-container {
   display: flex;
   flex-wrap: wrap;

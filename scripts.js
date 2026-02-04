@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentInput = '';
 
         const commands = {
-            'help': () => `Available commands: ${window.location.pathname === '/' ? 'about, ' : 'home, '}games, socials, refresh, back, clear, help, donate, email, smashbit, smashbit-policy, smashbit-terms, google-play, itch, discord, twitter, instagram, odysee, youtube, buymeacoffee, kofi`,
+            'help': () => `Available commands: ${window.location.pathname === '/' ? 'about, ' : 'home, '}games, socials, refresh, back, clear, help, donate, email, smashbit, shape-buster, google-play, itch, discord, twitter, instagram, odysee, youtube, buymeacoffee, kofi`,
             'about': () => {
                 if (window.location.pathname !== '/about') {
                     window.location.href = '/about';
@@ -73,24 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 return 'You are already on the Smashbit page!';
             },
-            'smashbit-policy': () => {
-                if (window.location.pathname !== '/games/smashbit/smashbit-privacy-policy') {
-                    window.location.href = '/games/smashbit/smashbit-privacy-policy';
-                    return 'Opening Smashbit Privacy Policy...';
+            'shape-buster': () => {
+                if (window.location.pathname !== '/games/shape-buster/') {
+                    window.location.href = '/games/shape-buster/';
+                    return 'Redirecting to SHAPE-buster page...';
                 }
-                return "You are already on the Smashbit's Privacy Policy page!";
-            },
-            'smashbit-terms': () => {
-                if (window.location.pathname !== '/games/smashbit/smashbit-terms') {
-                    window.location.href = '/games/smashbit/smashbit-terms';
-                    return 'Opening Smashbit Terms of Service...';
-                }
-                return "You are already on the Smashbit's T&C page!";
+                return 'You are already on the SHAPE-buster page!';
             },
             'email': () => {
                 window.location.href = 'mailto:SmileLulzContact@gmail.com';
                 return 'Opening email client...';
             },
+
             // Socials
             'google-play': () => {
                 window.open('https://play.google.com/store/apps/developer?id=SmileLulz', '_blank');
